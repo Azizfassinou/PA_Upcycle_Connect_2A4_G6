@@ -1,3 +1,11 @@
+package models
+
+import (
+	"time"
+
+	"gorm.io/gorm"
+)
+
 type Container struct {
 	ID          uint           `json:"id" gorm:"primaryKey"`
 	Location    string         `json:"location" gorm:"not null"`
